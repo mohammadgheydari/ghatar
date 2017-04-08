@@ -67,3 +67,19 @@ $('div.ad-section a').each(function() {
     $(this).css('background-color', myColors[i]);
     i = (i + 1) % myColors.length;
 });
+
+
+// $(window).scroll(function () {
+//    var page = $(window).scrollTop();
+//    if (page + $(window).height() + 150 > $(document).height()) {
+//        $("#adsl").removeClass("fixed");
+//    } else {
+//        if (page > 800) {
+//            $("#adsl").addClass("fixed");
+//            $("#adsl").css({ "height": xheight });
+//        }
+//        else {
+//            $("#adsl").removeClass("fixed");
+//        }
+//    }
+// });

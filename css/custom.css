@@ -281,6 +281,11 @@ a.ad:hover{
 .space {
     margin-top: 20px;
 }
+#adsl.fixed {
+    top: -660px;
+    z-index: 999999999 !important;
+    position: fixed !important;
+}
 
 /*********************** Others **********************/
 a.scrolltotop {
