@@ -49,6 +49,19 @@ $('.card').on('mouseenter', function(){
     $(this).find('.card-action a.will-hide').fadeOut();
 });
 
+// $('.card').on('mouseenter', function(){
+//     $(this).find('.hovered a.will-hide').fadeIn('fast');
+// }).on('mouseleave', function(){
+//     $(this).find('.hovered a.will-hide').fadeOut();
+// });
+
+$('.btn-more').on('click', function(e){
+    e.preventDefault();
+    $(this).addClass('hidden');
+    $('.loading').removeClass('hidden');
+
+});
+
 $.Negar("div.card", {
     Colorlist: ['#eb4924', '#ff9500', '#8e8e93', '#ffcc00', '#4cd964', '#34aadc', '#ff3b30','#5856d6', '#ff2d55'],
     Effect: true,
