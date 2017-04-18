@@ -44,7 +44,10 @@ button:focus, button:visited, a:focus, a:visited, a:active {
 .white{
     background: #fff;
     border-radius: 2px;
-    padding: 2px;
+    padding: 1px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
     box-shadow: rgba(0, 0, 0, 0.137255) 0px 2px 2px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
 }
 @media (min-width: 1400px) {
@@ -617,6 +620,40 @@ div.avato span {
     position: relative;
     right: -100px;
     vertical-align: middle;
+}
+/*comments*/
+.thumbnail {
+    padding:0px;
+}
+.panel {
+    position:relative;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+    position:absolute;
+    top:11px;left:-16px;
+    right:100%;
+    width:0;
+    height:0;
+    display:block;
+    content:" ";
+    border-color:transparent;
+    border-style:solid solid outset;
+    pointer-events:none;
+}
+.panel>.panel-heading:after{
+    border-width:7px;
+    border-right-color:#f7f7f7;
+    margin-top:1px;
+    margin-left:2px;
+}
+.panel>.panel-heading:before{
+    border-right-color:#ddd;
+    border-width:8px;
+}
+.content-image{
+    max-width: 600px;
+    width:98%;
+    margin: 10px auto;
 }
 
 /*media query*/
