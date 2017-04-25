@@ -34,7 +34,6 @@ $('.share-btn').click(function (e) {
     $('.socials-top').slideToggle('fast');
 });
 
-new WOW().init();
 
 
 $('#nav').affix({
@@ -74,7 +73,7 @@ if($('.ad-section').offset().top + $('.ad-section').outerHeight(true) == $(windo
 
 
 
-var myColors = ['#eb4924', '#ff9500', '#8e8e93', '#FFC107', '#4cd964', '#34aadc', '#ff3b30','#5856d6', '#ff2d55'];
+var myColors = [ '#4cd964', '#34aadc', '#ff3b30','#5856d6'];
 var i = 0;
 $('div.ad-section a').each(function() {
     $(this).css('background-color', myColors[i]);

@@ -17,7 +17,6 @@ html, body, .tooltip {
     font-family: "IRANSansWeb", "tahoma", Helvetica, Arial, sans-serif !important;
     background: #f4f4f4;
 }
-
 button:focus, button:visited, a:focus, a:visited, a:active {
     outline: none;
 }
@@ -373,7 +372,24 @@ button.close {
     padding: 10px 24px;
     border-radius: 0 0 2px 2px;
 }
+.card.subscribe-section{
+    background: #eb4924;
+    color:#fff;
+}
 
+.card.subscribe-section .title{
+    font-size: 17px;
+}
+.card.subscribe-section .form-inline{
+    margin: 15px auto;
+}
+.card.subscribe-section .subtitle{
+    font-size: 13px;
+    color: #f8f8f8;
+}
+.card.subscribe-section p{
+    font-size: 11px;
+}
 .card .card-content .card-title {
     display: block;
     line-height: 32px;
@@ -629,26 +645,29 @@ div.avato span {
     position:relative;
 }
 .panel>.panel-heading:after,.panel>.panel-heading:before{
-    position:absolute;
-    top:11px;left:-16px;
-    right:100%;
-    width:0;
-    height:0;
-    display:block;
-    content:" ";
-    border-color:transparent;
-    border-style:solid solid outset;
-    pointer-events:none;
+    position: absolute;
+    top: 11px;
+    left: 100%;
+    right: 17;
+    width: 0;
+    height: 0;
+    display: block;
+    content: " ";
+    border-color: transparent;
+    border-style: solid solid outset;
+    pointer-events: none;
 }
 .panel>.panel-heading:after{
-    border-width:7px;
-    border-right-color:#f7f7f7;
-    margin-top:1px;
-    margin-left:2px;
+    border-width: 7px;
+    border-right-color: #f7f7f7;
+    margin-top: 1px;
+    margin-right: 2px;
+    transform: rotate(180deg);
 }
 .panel>.panel-heading:before{
-    border-right-color:#ddd;
-    border-width:8px;
+    border-right-color: #ddd;
+    border-width: 8px;
+    transform: rotate(180deg);
 }
 .content-image{
     max-width: 600px;
@@ -664,6 +683,9 @@ div.avato span {
 
     .navbar-header {
         float: right;
+    }
+    .ads{
+        width:100%;
     }
 
 }
