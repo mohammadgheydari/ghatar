@@ -34,7 +34,10 @@ $('.share-btn').click(function (e) {
     $('.socials-top').slideToggle('fast');
 });
 
-
+$('a.like-btn').on('click', function(e){
+    e.preventDefault();
+   $(this).toggleClass('liked')
+});
 
 $('#nav').affix({
     offset: {
