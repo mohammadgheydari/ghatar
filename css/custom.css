@@ -31,7 +31,7 @@ button:focus, button:visited, a:focus, a:visited, a:active {
 }
 
 .right {
-    float: right;
+    float: right !important;
 }
 
 .left {
@@ -79,11 +79,28 @@ a.ad {
     padding: 10px 0;
     width: 300px;
     margin: 15px auto;
+    border-radius: 13px;
+    position: relative;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.137255) 0px 2px 2px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
     transition: all 150ms ease-in-out;
 }
-
+a.ad:before{
+    content: "\f2a6";
+    display: inline-block;
+    float: right;
+    font-family: ionicons;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 35px;
+    line-height: 3;
+    text-align: center;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0 13px 13px 0;
+}
 a.ad:hover {
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.137255) 0px 6px 10px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 18px 0px, rgba(0, 0, 0, 0.298039) 0px 3px 5px -1px;
@@ -93,19 +110,19 @@ a.ad:hover {
     box-shadow: rgba(0, 0, 0, 0.137255) 0px 2px 2px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
 }
 
+
+
 /*********************** Header **********************/
 
 .navbar-form input, .form-inline input {
     width: auto;
 }
-
 #nav.affix {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
 }
-
 .top-header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#686868+0,40434b+99 */
     background: #686868; /* Old browsers */
@@ -115,7 +132,34 @@ a.ad:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#686868', endColorstr='#40434b', GradientType=1); /* IE6-9 */
     padding: 10px 0;
 }
+#search-form-text {
+    width: 350px;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.137255) 0px 6px 10px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 18px 0px, rgba(0, 0, 0, 0.298039) 0px 3px 5px -1px;
+    direction: rtl;
+    border: 1px solid #a0a0a0;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #313131;
+    position: absolute;
+    top: 51px;
+    z-index: 1;
+    left: 9px;
+    height: 0;
+    padding: 3px 7px;
+    font-size: 14px;
+}
+.collapse-parent{
+    background: white;
 
+}
+.collapse-parent a{
+    text-align: center;
+    color: #444;
+}
+.nav-col{
+    padding: 10px 0;
+}
 .stylish-input-group .input-group-addon {
     background: white !important;
 }
@@ -141,17 +185,15 @@ a.ad:hover {
     border-color: transparent;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a , .navbar-default .navbar-nav > li > a:focus{
     color: #fff;
 }
-
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+ .navbar-default .navbar-nav > li > a:hover {
     color: #f7f7f7;
     background-color: rgba(235, 73, 36, 0.9);
 }
 
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
     color: #ffffff;
     background-color: #eb4924;
@@ -492,6 +534,13 @@ button.close {
     -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
     animation-iteration-count: 1;
 }
+.card-action a.like-btn{
+    transition: all 150ms ease-in-out;
+}
+
+.card-action a.like-btn.liked{
+    color: #e2264d;
+}
 
 .card-action i {
     color: #5f5f5f;
@@ -676,9 +725,18 @@ div.avato span {
 
 /*comments*/
 .thumbnail {
-    padding: 0px;
+    padding: 0;
+    border:none;
 }
-
+.thumbnail span{
+    font-size: 25px !important;
+    line-height: 1.6 !important;
+}
+.thumbnail .avato{
+    border: 5px solid #eeecef;
+    height: 50px;
+    width: 50px;
+}
 .panel {
     position: relative;
 }
@@ -783,6 +841,19 @@ img.user-img {
     border-radius: 5px;
 }
 
+.nav-tabs {
+    padding-right: 0;
+}
+.nav-tabs a {
+    color: #444;
+    font-size: 12px;
+    font-weight: bold;
+}
+.ad-section{
+    position: relative;
+}
+.fixed {  position: fixed; top: 0; }
+
 @keyframes heartbeat {
     0% {
         transform: scale(.5);
@@ -814,9 +885,26 @@ img.user-img {
         float: right;
     }
 
-    .ads {
-        width: 100%;
-    }
 
 }
 
+@media (max-width: 768px) {
+    .navbar-nav li a {
+        text-align: center;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #ddd;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border:none;
+    }
+    .ads {
+        width: 100%;
+    }
+    .card-action a.will-hide{
+        display: block !important;
+    }
+}

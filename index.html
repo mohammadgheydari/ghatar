@@ -2,7 +2,8 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name=keywords content="#">
     <meta name=description content="#">
@@ -28,8 +29,8 @@
                 </a>
             </div>
             <div class="col-xs-12 col-sm-6 right">
-                <a href="http://www.tickfa.ir" class="header-ad" target="_blank">
-                    <img src="http://www.ghatar.com/wp-content/uploads/files/2016/tikfa.gif" alt="تیکفا">
+                <a href="http://www.tickfa.ir" class="header-ad " target="_blank">
+                    <img src="image/tikfa.gif" class="ads" alt="تیکفا">
                 </a>
             </div>
         </div>
@@ -53,14 +54,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right  ">
                     <li class="active"><a href="#">ایستگاه اول</a></li>
-                    <li><a href="#">واگـن ها</a></li>
+                    <li><a class="collapse-menu" href="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">واگـن ها</a></li>
                     <li><a href="#">خبـرنامه</a></li>
                     <li><a href="#">اخبار شرکت ها</a></li>
                 </ul>
 
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#" data-toggle="modal" data-target="#subscribe-modal"><i class="ion-android-mail"></i></a>
-                    </li>
+                <ul class="nav navbar-nav navbar-left hidden-xs">
+                    <li><a href="#" data-toggle="modal" data-target="#subscribe-modal"><i class="ion-android-mail"></i></a></li>
                     <li><a href="#" data-toggle="modal" data-target="#login-modal"><i class="ion-person"></i></a></li>
                     <li><a href="#" class="share-btn"><i class="ion-android-share-alt"></i></a>
                         <ul class="top-boxes list-inline socials-top">
@@ -85,26 +86,51 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="ion-ios-search-strong"></i></a>
-                        <!--<ul class="list-inline header-search" style="display: block">-->
-                        <!--<li>-->
-                        <!--<div id="imaginary_container">-->
-                        <!--<div class="input-group stylish-input-group">-->
-                        <!--<input type="text" class="form-control" placeholder="Search">-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<button type="submit">-->
-                        <!--<span class="ion-search"></span>-->
-                        <!--</button>-->
-                        <!--</span>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--</li>-->
-                        <!--</ul>-->
+                        <a href="#" class="search-btn"><i class="ion-ios-search-strong"></i></a>
+                        <input id="search-form-text" class="hidden" type="text" placeholder="جستجو ...">
                     </li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
+        <div class="collapse-parent gray">
+            <div class="collapse" id="collapseExample">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 nav-col">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="cat-item cat-item-20"><a href="http://www.ghatar.com/category/%d8%aa%d8%b5%d9%88%d9%8a%d8%b1%db%8c/">فیلم و عکس</a></li>
+                                <li class="cat-item cat-item-12"><a href="http://www.ghatar.com/category/%d8%a7%d8%ac%d8%aa%d9%85%d8%a7%d8%b9%db%8c/">اجتماعی</a></li>
+                                <li class="cat-item cat-item-11"><a href="http://www.ghatar.com/category/%d8%b3%d9%8a%d8%a7%d8%b3%db%8c/">سیاسی</a></li>
+                                <li class="cat-item cat-item-16"><a href="http://www.ghatar.com/category/%d9%81%d8%b1%d9%87%d9%86%da%af%db%8c-%d9%87%d9%86%d8%b1%db%8c/">فرهنگ و هنر</a></li>
+                                <li class="cat-item cat-item-12"><a href="http://www.ghatar.com/category/%d8%a7%d8%ac%d8%aa%d9%85%d8%a7%d8%b9%db%8c/">اجتماعی</a></li>
+                                <li class="cat-item cat-item-11"><a href="http://www.ghatar.com/category/%d8%b3%d9%8a%d8%a7%d8%b3%db%8c/">سیاسی</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 nav-col">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="cat-item cat-item-20"><a href="http://www.ghatar.com/category/%d8%aa%d8%b5%d9%88%d9%8a%d8%b1%db%8c/">فیلم و عکس</a></li>
+                                <li class="cat-item cat-item-12"><a href="http://www.ghatar.com/category/%d8%a7%d8%ac%d8%aa%d9%85%d8%a7%d8%b9%db%8c/">اجتماعی</a></li>
+                                <li class="cat-item cat-item-11"><a href="http://www.ghatar.com/category/%d8%b3%d9%8a%d8%a7%d8%b3%db%8c/">سیاسی</a></li>
+                                <li class="cat-item cat-item-16"><a href="http://www.ghatar.com/category/%d9%81%d8%b1%d9%87%d9%86%da%af%db%8c-%d9%87%d9%86%d8%b1%db%8c/">فرهنگ و هنر</a></li>
+                                <li class="cat-item cat-item-12"><a href="http://www.ghatar.com/category/%d8%a7%d8%ac%d8%aa%d9%85%d8%a7%d8%b9%db%8c/">اجتماعی</a></li>
+                                <li class="cat-item cat-item-11"><a href="http://www.ghatar.com/category/%d8%b3%d9%8a%d8%a7%d8%b3%db%8c/">سیاسی</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 nav-col">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="cat-item cat-item-20"><a href="http://www.ghatar.com/category/%d8%aa%d8%b5%d9%88%d9%8a%d8%b1%db%8c/">فیلم و عکس</a></li>
+                                <li class="cat-item cat-item-12"><a href="http://www.ghatar.com/category/%d8%a7%d8%ac%d8%aa%d9%85%d8%a7%d8%b9%db%8c/">اجتماعی</a></li>
+                                <li class="cat-item cat-item-11"><a href="http://www.ghatar.com/category/%d8%b3%d9%8a%d8%a7%d8%b3%db%8c/">سیاسی</a></li>
+                                <li class="cat-item cat-item-16"><a href="http://www.ghatar.com/category/%d9%81%d8%b1%d9%87%d9%86%da%af%db%8c-%d9%87%d9%86%d8%b1%db%8c/">فرهنگ و هنر</a></li>
+                                <li class="cat-item cat-item-12"><a href="http://www.ghatar.com/category/%d8%a7%d8%ac%d8%aa%d9%85%d8%a7%d8%b9%db%8c/">اجتماعی</a></li>
+                                <li class="cat-item cat-item-11"><a href="http://www.ghatar.com/category/%d8%b3%d9%8a%d8%a7%d8%b3%db%8c/">سیاسی</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
 </div>
 <div class="container">
@@ -132,10 +158,12 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="ion-ios-clock"></i>
-                                        ۵۹ دقیقه پیش
+                                    <a href="#" class="like-btn">
+                                        <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
+                                        لایک
                                     </a>
+
                                 </li>
                                 <li>
                                     <a href="#" class="will-hide">
@@ -150,9 +178,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="will-hide like-btn">
-                                        <i class="ion-android-favorite"></i>
-                                        لایک
+                                    <a href="#" class="will-hide ">
+                                        <i class="ion-ios-clock"></i>
+                                        ۵۹ دقیقه پیش
                                     </a>
                                 </li>
                             </ul>
@@ -207,7 +235,8 @@
                                 </li>
                                 <li>
                                     <a href="#" class="will-hide like-btn">
-                                        <i class="ion-android-favorite" ></i>
+                                        <i class="ion-android-favorite"></i>
+                                        <span class="like-number">0</span>
                                         لایک
                                     </a>
                                 </li>
@@ -261,6 +290,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">100</span>
                                         لایک
                                     </a>
                                 </li>
@@ -309,6 +339,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">201</span>
                                         لایک
                                     </a>
                                 </li>
@@ -358,6 +389,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -412,6 +444,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">0</span>
                                         لایک
                                     </a>
                                 </li>
@@ -431,7 +464,7 @@
                 <div class="ad">
                     <a href="http://ad-track.anetwork.ir/nclick/g/VaOCMahHhvwyrSQqo0wgVpeNcyLNWEG6aNTbZOdFYZLQHUfctL2M7Ve9mC3mDvyYN/aHR0cDovL2JsYXh1cC5jb20vZmEvP3V0bV9zb3VyY2U9QW5ldHdvcmsmdXRtX2NhbXBhaWduPXdpbmRvd3MmdXRtX21lZGl1bT1jcGMmdXRtX3Rlcm09W3B1Ymxpc2hlci1pZF0mdXRtX2NvbnRlbnQ9NDY4eDYw"
                        target="_blank" id="link">
-                        <img src="//static.anetwork.ir/banner/37724824168253668977.gif" width="468" height="60"
+                        <img src="//static.anetwork.ir/banner/37724824168253668977.gif" class="ads" width="468" height="60"
                              border="0">
                     </a>
                 </div>
@@ -475,6 +508,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -531,6 +565,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -584,6 +619,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -632,6 +668,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -681,6 +718,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -735,6 +773,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -791,6 +830,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -847,6 +887,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -900,6 +941,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -948,6 +990,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -997,6 +1040,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1051,6 +1095,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1107,6 +1152,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1163,6 +1209,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1216,6 +1263,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1264,6 +1312,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1313,6 +1362,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1367,6 +1417,7 @@
                                 <li>
                                     <a href="#" class="will-hide like-btn">
                                         <i class="ion-android-favorite"></i>
+                                        <span class="like-number">2</span>
                                         لایک
                                     </a>
                                 </li>
@@ -1388,7 +1439,7 @@
             <a href="#" class="btn btn-more">
                 مشاهده مطالب بیشتر
             </a>
-            <img src="image/loading.gif"  class="loading hidden"  alt="">
+            <img src="image/loading.gif" class="loading hidden" alt="">
         </div>
 
         <!-------- Left side --------->
@@ -1534,7 +1585,7 @@
             </div>
             <div class="ad">
                 <a href="http://karbobala.com" target="_blank" title="کرب و بلا"><img
-                        src="http://www.ghatar.com/wp-content/uploads/posts/2016/Karbobala.gif" alt="کرب و بلا"
+                        src="image/Karbobala.gif" alt="کرب و بلا"
                         width="240" height="90"></a>
             </div>
             <div class="card">
@@ -1656,41 +1707,44 @@
                 </div>
             </div>
 
-            <div class="ad-section" id="adsl">
-                <a href="http://www.fete.ir" class="ad" target="_blank">
-                    <h4>خدمات مجالس عروسی</h4>تشریفات مجالس با بهترین قیمت
-                </a>
-                <a href="http://tourir.ir/net-antalya/%D8%AA%D9%88%D8%B1-%D8%A2%D9%86%D8%AA%D8%A7%D9%84%DB%8C%D8%A7/"
-                   class="ad" target="_blank">
-                    <h4>تور آنتالیا</h4>
-                </a>
-                <a href="https://www.pouyasazan.org/%D9%87%D8%A7%D8%B3%D8%AA-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2"
-                   class="ad" target="_blank">
-                    <h4>خرید هاست</h4>
-                </a>
-                <a href="http://www.drdarman.ir/" class="ad" target="_blank">
-                    <h4>درمان هموروئید، شقاق</h4>سینوس مویی، فیستول، فیشر
-                </a>
-                <a href="http://chibepoosham.com/tag/%D9%85%D8%A7%D9%86%D8%AA%D9%88/" class="ad" target="_blank">
-                    <h4>مانتو، چی بپوشم؟</h4>
-                </a>
-                <a href="http://faragasht.com/%D8%AA%D9%88%D8%B1-%D8%A7%D8%B1%D9%85%D9%86%D8%B3%D8%AA%D8%A7%D9%86/"
-                   class="ad" target="_blank">
-                    <h4>تور ارمنستان</h4>ارزانترین قیمت تور ارمنستان
-                </a>
-                <a href="http://www.bedsale.ir/category/%D8%AA%D8%B4%DA%A9-%D8%AE%D9%88%D8%A7%D8%A8/%D8%AA%D8%B4%DA%A9-%D8%AE%D9%88%D8%B4%D8%AE%D9%88%D8%A7%D8%A8"
-                   class="ad" target="_blank">
-                    <h4>تشک خوشخواب</h4>
-                </a>
-                <a href="http://blog.akhbarrasmi.com/%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1-%D8%AA%D8%B6%D9%85%DB%8C%D9%86%DB%8C-%D8%AE%D8%A8%D8%B1-%D8%AF%D8%B1-20-%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87-%D8%AE%D8%A8%D8%B1%DB%8C/"
-                   class="ad" target="_blank">
-                    <h4>توزیع و انتشار تضمینی خبر</h4>
-                </a>
-                <a href="http://chibepoosham.com/tag/%D9%84%D8%A8%D8%A7%D8%B3-%D9%85%D8%AC%D9%84%D8%B3%DB%8C/"
-                   class="ad"
-                   target="_blank">
-                    <h4>لباس مجلسی</h4>
-                </a>
+
+            <div class="ad-section" >
+                <div class="fixed-ad">
+                    <a href="http://www.fete.ir" class="ad" target="_blank">
+                        <h4>خدمات مجالس عروسی</h4>تشریفات مجالس با بهترین قیمت
+                    </a>
+                    <a href="http://tourir.ir/net-antalya/%D8%AA%D9%88%D8%B1-%D8%A2%D9%86%D8%AA%D8%A7%D9%84%DB%8C%D8%A7/"
+                       class="ad" target="_blank">
+                        <h4>تور آنتالیا</h4>
+                    </a>
+                    <a href="https://www.pouyasazan.org/%D9%87%D8%A7%D8%B3%D8%AA-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2"
+                       class="ad" target="_blank">
+                        <h4>خرید هاست</h4>
+                    </a>
+                    <a href="http://www.drdarman.ir/" class="ad" target="_blank">
+                        <h4>درمان هموروئید، شقاق</h4>سینوس مویی، فیستول، فیشر
+                    </a>
+                    <a href="http://chibepoosham.com/tag/%D9%85%D8%A7%D9%86%D8%AA%D9%88/" class="ad" target="_blank">
+                        <h4>مانتو، چی بپوشم؟</h4>
+                    </a>
+                    <a href="http://faragasht.com/%D8%AA%D9%88%D8%B1-%D8%A7%D8%B1%D9%85%D9%86%D8%B3%D8%AA%D8%A7%D9%86/"
+                       class="ad" target="_blank">
+                        <h4>تور ارمنستان</h4>ارزانترین قیمت تور ارمنستان
+                    </a>
+                    <a href="http://www.bedsale.ir/category/%D8%AA%D8%B4%DA%A9-%D8%AE%D9%88%D8%A7%D8%A8/%D8%AA%D8%B4%DA%A9-%D8%AE%D9%88%D8%B4%D8%AE%D9%88%D8%A7%D8%A8"
+                       class="ad" target="_blank">
+                        <h4>تشک خوشخواب</h4>
+                    </a>
+                    <a href="http://blog.akhbarrasmi.com/%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1-%D8%AA%D8%B6%D9%85%DB%8C%D9%86%DB%8C-%D8%AE%D8%A8%D8%B1-%D8%AF%D8%B1-20-%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87-%D8%AE%D8%A8%D8%B1%DB%8C/"
+                       class="ad" target="_blank">
+                        <h4>توزیع و انتشار تضمینی خبر</h4>
+                    </a>
+                    <a href="http://chibepoosham.com/tag/%D9%84%D8%A8%D8%A7%D8%B3-%D9%85%D8%AC%D9%84%D8%B3%DB%8C/"
+                       class="ad"
+                       target="_blank">
+                        <h4>لباس مجلسی</h4>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
